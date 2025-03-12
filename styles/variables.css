@@ -4,7 +4,8 @@
   --accent-font: 'PressStart2P-Regular';
   --main-font-size: 18px;
   --main-font-weight: 400;
-  --font-solor: #000000;
+  --font-color: #000000;
+  --font-color-invert: #ffffff;
   --main-section-width: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
   --padding-header-sides: clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
   --padding-header-vertical-sides: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
