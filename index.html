@@ -469,6 +469,7 @@
             </div>
           </article>
         </li>
+        <li>
         <button
           onclick="window['save-dialog'].showModal()"
           class="button-save button"
@@ -478,19 +479,20 @@
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
-        <dialog id="save-dialog" class="save-form">
-          <svg class="disket-container-dialog">
-            <use href="./svg/flopy.svg#disket"></use>
-          </svg>
-          <h2 class="save-dialog-title">Вставьте дискету, чтобы продолжить</h2>
-          <button
-            class="button-close button"
-            onclick="window['save-dialog'].close()"
-          >
-            <span class="button__text">OK</span>
-          </button>
-        </dialog>
+      </li>
       </ul>
+      <dialog id="save-dialog" class="save-form">
+        <svg class="disket-container-dialog">
+          <use href="./svg/flopy.svg#disket"></use>
+        </svg>
+        <h2 class="save-dialog-title">Вставьте дискету, чтобы продолжить</h2>
+        <button
+          class="button-close button"
+          onclick="window['save-dialog'].close()"
+        >
+          <span class="button__text">OK</span>
+        </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
