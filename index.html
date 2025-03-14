@@ -27,14 +27,16 @@
             <h2 class="card-title">
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
-            <div class="card-pictures-case">
-              <img
+            <figure class="card-pictures-case">
+              <picture><img
+                loading="lazy"
                 class="card-picture itachi-picture"
                 src="./images/itachi.jpg"
                 alt="персонаж итачи из Аниме Наруто"
               />
+            </picture>
               <span class="image-label">&lt;/HTML&gt;</span>
-            </div>
+            </figure>
             <div class="card-prescribtion-block">
               <p>
                 Это было самое начало пути. На этом этапе важно было
@@ -43,7 +45,7 @@
               </p>
               <p>Место для ваших воспоминаний о начале обучения.</p>
               <div class="button-container">
-                <button class="resset-styles-button card__icon-button">
+                <button aria-label="like-icon" type="button" class="resset-styles-button card__icon-button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +73,7 @@
                     />
                   </svg>
                 </button>
-                <button class="resset-styles-button button card__like-button">
+                <button aria-label="Like" type="button" class="resset-styles-button button card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -432,7 +434,7 @@
                 полностью не получится, но это тот случай, когда важен сам
                 процесс познания. Ведь часто путь — и есть результат.
               </p>
-              <p>Место для ваших воспоминаний о начале обучения.</p>
+              <p>Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
               <div class="button-container">
                 <button class="resset-styles-button card__icon-button">
                   <svg
@@ -469,10 +471,12 @@
             </div>
           </article>
         </li>
-        <li>
-          <button
+      </ul>
+      <button
             onclick="window['save-dialog'].showModal()"
             class="button-save button"
+            type="button"
+            aria-label="Open Modal Window"
           >
             <svg class="disket-container">
               <use
@@ -482,14 +486,14 @@
             </svg>
             <span class="button__text">Сохранить на память</span>
           </button>
-        </li>
-      </ul>
       <dialog id="save-dialog" class="save-form">
         <svg class="disket-container-dialog">
           <use href="./svg/flopy.svg#disket"></use>
         </svg>
         <h2 class="save-dialog-title">Вставьте дискету, чтобы продолжить</h2>
         <button
+        aria-label="Close"
+        type="button"
           class="button-close button"
           onclick="window['save-dialog'].close()"
         >
