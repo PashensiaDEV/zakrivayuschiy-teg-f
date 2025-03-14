@@ -44,9 +44,9 @@
 }
 
 .header__title {
-  text-transform: uppercase;
   font-weight: 400;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
 }
 
 .card-list {
@@ -66,10 +66,10 @@
 
 .card-pictures-case {
   position: relative;
+  margin: 0;
   border-block-start: 2px solid var(--border-color, #000000);
   border-block-end: 2px solid var(--border-color, #000000);
   line-height: 0;
-  margin: 0;
 }
 
 .card-picture {
@@ -83,8 +83,8 @@
 .card-title {
   margin: 4px 8px;
   font-size: var(--main-font-size);
-  font-variation-settings: "wght" var(--bold-font-weight);
   line-height: 122%;
+  font-variation-settings: "wght" var(--bold-font-weight);
 }
 
 .card-prescribtion-block {
@@ -109,7 +109,7 @@
 @supports (
   (text-stroke: 1px var(--font-color-invert)) or
     (-webkit-text-stroke: 1px var(--font-color-invert))
- ) {
+) {
   .image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--font-color-invert);
@@ -172,9 +172,9 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin: 47px auto 0;
   padding: 16px 0;
   inline-size: 338px;
-  margin: 47px auto 0;
 }
 
 .button-close {
@@ -192,10 +192,10 @@
 }
 
 .disket-container {
+  color: var(--font-color-invert);
   block-size: 21px;
   inline-size: 21px;
   mix-blend-mode: difference;
-  color: var(--font-color-invert);
 }
 
 .disket-container-dialog {
@@ -282,7 +282,7 @@ body:has(.save-form[open]) {
 
   .card-prescribtion-block {
     gap: 25px;
-}
+  }
 
   .card {
     width: 100%;
@@ -293,13 +293,13 @@ body:has(.save-form[open]) {
   }
 
   .button-save {
-    inline-size: 306px;
     padding: 20px 0 17px;
+    inline-size: 306px;
   }
 
-  .disket-container{
-    transform: scale(1.4);
+  .disket-container {
     margin-bottom: 5px;
+    transform: scale(1.4);
   }
 
   .save-form[open] {
